@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Bitmaps for ESP</title>
+    <style>
+        /* Optional: Style to make images visible and easy to manage */
+        .bitmap-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        .bitmap {
+            width: 50px; /* Define the size of your "bitmap" */
+            height: 50px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Embedded Bitmaps</h1>
+    <p>These images are stored directly in the HTML file using Base64 data URIs.</p>
+
+    <div class="bitmap-container">
+        
+        <img id="red-square" class="bitmap" 
+             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCI+PHJlY3Qgd2lkdGg9IjUwIiBoZWlnaHQ9IjUwIiBmaWxsPSJyZWQiLz48L3N2Zz4=" 
+             alt="Red Square Bitmap">
+        
+        <img id="blue-circle" class="bitmap" 
+             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCI+PGNpcmNsZSBjeD0iMjUiIGN5PSIyNSIgcj0iMjUiIGZpbGw9ImJsdWUiLz48L3N2Zz4=" 
+             alt="Blue Circle Bitmap">
+
+        <img id="green-triangle" class="bitmap" 
+             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCI+PHBvbHlnb24gcG9pbnRzPSIyNSwwLDAsNTAsNTAsNTAiIGZpbGw9ImdyZWVuIi8+PC9zdmc+" 
+             alt="Green Triangle Bitmap">
+
+    </div>
+
+    <p>You can dynamically access these images via their `id` attributes from your ESP's code or JavaScript.</p>
+    
+</body>
+</html>
